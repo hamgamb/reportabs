@@ -10,9 +10,9 @@ create_caption <- function(data_name, plot_data, over) {
 create_caption_wpi <- function(plot_data, over) {
   table_no <-"2b:7b"
   caption_source <- "Source: ABS Wage Price Index, Australia"
-  date <- paste0(reportabs::release(plot_data, "month"),
+  date <- paste0(release(plot_data, "month"),
                  " ",
-                 reportabs::release(plot_data, "year"))
+                 release(plot_data, "year"))
   caption <- paste0(caption_source, " ", date, " (", table_no, ")")
 
 }
@@ -44,8 +44,8 @@ create_caption_labour_force <- function(plot_data, over) {
   series_types <- unique(over$series_type)
 
   caption_table <-  paste0("Source: ABS Labour Force, Australia, ",
-                           reportabs::release(plot_data, "month"), " ",
-                           reportabs::release(plot_data, "year"),
+                           release(plot_data, "month"), " ",
+                           release(plot_data, "year"),
                            " (Table ", paste0(table_no, collapse = ","), ", ", series_types, ")")
 
   if (length(caption_table) != 1) {
@@ -66,8 +66,8 @@ create_caption_treasury <- function(plot_data, indicator) {
                                                                     lubridate::month(max(plot_data$date), abbr = FALSE, label = TRUE), " ",
                                                                     lubridate::year(max(plot_data$date))),
     grepl("payroll", over$indicator, ignore.case = TRUE) ~ paste0("Source: ABS Weekly Payroll Jobs and Wages in Australia, ",
-                                                                  reportabs::release(plot_data, "month"), " ",
-                                                                  reportabs::release(plot_data, "year")),
+                                                                  release(plot_data, "month"), " ",
+                                                                  release(plot_data, "year")),
     grepl("jobkeeper", over$indicator, ignore.case = TRUE) ~ paste0("Source: Treasury, ",
                                                                     lubridate::month(max(plot_data$date), abbr = FALSE, label =TRUE), " ",
                                                                     lubridate::year(max(plot_data$date)))
