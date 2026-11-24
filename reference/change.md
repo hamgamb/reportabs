@@ -61,8 +61,8 @@ character
 ``` r
 library(reportabs)
 labour_force_briefing <- read_absdata("labour_force_briefing")
-#> Reading labour_force_briefing file found in /tmp/Rtmp2eRRFm
+#> Reading labour_force_briefing file found in /tmp/RtmpbgUnA5
 change(labour_force_briefing,
 filter_with = list(indicator = "Employed total", series_type = "Seasonally Adjusted"))
-#> [1] "increased by 259 (1.8%) to 14,768"
+#> [1] "increased by 84 (0.6%) to 14,739"
 ```

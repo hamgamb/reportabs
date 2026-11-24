@@ -38,21 +38,21 @@ a number
 ``` r
 library(reportabs)
 labour_force_briefing <- read_absdata("labour_force_briefing")
-#> Reading labour_force_briefing file found in /tmp/Rtmp2eRRFm
+#> Reading labour_force_briefing file found in /tmp/RtmpbgUnA5
 value_at(labour_force_briefing , filter_with = list(indicator = "Employed total"))
-#> → No year or month specified. Returning data for 2026 March
-#> # A tibble: 27 × 7
+#> → No year or month specified. Returning data for 2026 October
+#> # A tibble: 21 × 7
 #>    date       sex     state             series_type       unit  indicator  value
 #>    <date>     <chr>   <chr>             <chr>             <chr> <chr>      <dbl>
-#>  1 2026-03-01 Persons Australia         Seasonally Adjus… 000   Employed… 14768.
-#>  2 2026-03-01 Persons New South Wales   Seasonally Adjus… 000   Employed…  4575.
-#>  3 2026-03-01 Persons Victoria          Seasonally Adjus… 000   Employed…  3786.
-#>  4 2026-03-01 Persons Queensland        Seasonally Adjus… 000   Employed…  3036.
-#>  5 2026-03-01 Persons South Australia   Seasonally Adjus… 000   Employed…   995.
-#>  6 2026-03-01 Persons Western Australia Seasonally Adjus… 000   Employed…  1679.
-#>  7 2026-03-01 Persons Tasmania          Seasonally Adjus… 000   Employed…   280.
-#>  8 2026-03-01 Males   Australia         Seasonally Adjus… 000   Employed…  7670.
-#>  9 2026-03-01 Males   New South Wales   Seasonally Adjus… 000   Employed…  2381.
-#> 10 2026-03-01 Males   Victoria          Seasonally Adjus… 000   Employed…  1960.
-#> # ℹ 17 more rows
+#>  1 2026-10-01 Persons Australia         Seasonally Adjus… 000   Employed… 14739.
+#>  2 2026-10-01 Persons New South Wales   Seasonally Adjus… 000   Employed…  4505.
+#>  3 2026-10-01 Persons Victoria          Seasonally Adjus… 000   Employed…  3826.
+#>  4 2026-10-01 Persons Queensland        Seasonally Adjus… 000   Employed…  3031.
+#>  5 2026-10-01 Persons South Australia   Seasonally Adjus… 000   Employed…   986.
+#>  6 2026-10-01 Persons Western Australia Seasonally Adjus… 000   Employed…  1689.
+#>  7 2026-10-01 Persons Tasmania          Seasonally Adjus… 000   Employed…   281.
+#>  8 2026-10-01 Males   Australia         Seasonally Adjus… 000   Employed…  7645.
+#>  9 2026-10-01 Males   New South Wales   Seasonally Adjus… 000   Employed…  2350.
+#> 10 2026-10-01 Males   Victoria          Seasonally Adjus… 000   Employed…  1982.
+#> # ℹ 11 more rows
 ```

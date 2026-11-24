@@ -9,14 +9,14 @@ labour_force <- read_absdata("labour_force")
 ``` r
 
 average_over(data = labour_force, filter_with = list(indicator = "Employed total"), between = c("2010-01-01", "2020-01-01"))
-#> [1] 1902.563
+#> [1] 1975.497
 ```
 
 ``` r
 
 change(data = labour_force, filter_with = list(indicator = "Employed total"))
 #> Warning: implied series_type = 'Trend'
-#> [1] "increased by 201 (1.4%) to 14,763"
+#> [1] "increased by 161 (1.1%) to 14,798"
 ```
 
 Numbers can be formatted nicely for inclusion in documents using

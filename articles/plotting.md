@@ -17,7 +17,9 @@ is identical to `plot_employed_total("Australia")`.
 
 abs_plot(labour_force, filter_with = list(indicator = "Employed total", state = "Australia"), type = "labour_force")
 #> Warning: implied series_type = 'Trend'
-#> Trying Google Fonts... Found! Downloading font to /tmp/RtmpMOHFJF
+#> Cannot reach Google Fonts. Skipping...
+#> Trying Font Squirrel...Not found.
+#> Trying Font Library... Found! Downloading font to /tmp/RtmpUKf3aR
 ```
 
 ![](plotting_files/figure-html/abs-plot-example-1.png)

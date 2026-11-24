@@ -39,8 +39,8 @@ numeric if print == FALSE, character if print == TRUE
 ``` r
 library(reportabs)
 labour_force_briefing <- read_absdata("labour_force_briefing")
-#> Reading labour_force_briefing file found in /tmp/Rtmp2eRRFm
+#> Reading labour_force_briefing file found in /tmp/RtmpbgUnA5
 last_value(labour_force_briefing, list(indicator = "Employed total",
 series_type = "Seasonally Adjusted"))
-#> [1] "14,509"
+#> [1] "14,655"
 ```
